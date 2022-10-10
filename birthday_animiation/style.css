@@ -1,0 +1,94 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body{
+	height: 100vh;
+	display: flex;
+	background: #cc881b;
+}
+.balloon {
+    position: absolute;
+    width: 153px;
+    height: 167px;
+    border-radius: 50%;
+    background-color: royalblue;
+    animation: move-up 5s;
+}
+.balloon::before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 169px;
+    background-color: wheat;
+    top: 168px;
+    left: 78px;
+}
+.balloon::after {
+    position: absolute;
+    content: '';
+    border-bottom: 12px solid red;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    top: 166px;
+    left: 68px;
+}
+.balloon:nth-child(2){
+	left:10%;
+	background-color: mistyrose;
+	animation-duration: 2s;	
+}
+.balloon:nth-child(3){
+	left: 20%;
+	background-color: palegreen;	
+	animation-duration: 4s;
+}
+.balloon:nth-child(4){
+	left: 28%;
+	background-color: darkgrey;
+		animation-duration: 7s;
+}
+.balloon:nth-child(5){
+	left: 40%;
+	background-color: limegreen;
+	animation-duration: 4.5s;	
+}
+.balloon:nth-child(6) {
+    left: 50%;
+    background-color: #986b29;
+}
+.balloon:nth-child(7) {
+    left: 57%;
+    background-color: lightyellow;
+    animation-duration: 3.5s;
+}
+
+.balloon:nth-child(8) {
+    left: 67%;
+    background-color: mediumvioletred;
+}
+.balloon:nth-child(9) {
+    left: 72%;
+    background-color: darkslategray;
+}
+.balloon:nth-child(10) {
+    left: 82%;
+    background-color: teal;
+    animation-duration: 2s;
+}
+.balloon:nth-child(11) {
+    left: 87%;
+    background-color: floralwhite;
+    animation-duration: 6s;
+}
+@keyframes move-up {
+	0%{
+top: 69%;
+}
+100%{
+	top: 0%;
+}
+}
