@@ -1,14 +1,14 @@
 *{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
 }
 
 body{
-	height: 100vh;
-	display: flex;
-	background: #cc881b;
+    height: 100vh;
+    display: flex;
+    background: #cc881b;
 }
 .balloon {
     position: absolute;
@@ -16,7 +16,7 @@ body{
     height: 167px;
     border-radius: 50%;
     background-color: royalblue;
-    animation: move-up 5s;
+    animation: move-up 10s ;
 }
 .balloon::before {
     position: absolute;
@@ -37,24 +37,24 @@ body{
     left: 68px;
 }
 .balloon:nth-child(2){
-	left:10%;
-	background-color: mistyrose;
-	animation-duration: 2s;	
+    left:10%;
+    background-color: mistyrose;
+    animation-duration: 2s; 
 }
 .balloon:nth-child(3){
-	left: 20%;
-	background-color: palegreen;	
-	animation-duration: 4s;
+    left: 20%;
+    background-color: #006a0057;    
+    animation-duration: 4s;
 }
 .balloon:nth-child(4){
-	left: 28%;
-	background-color: darkgrey;
-		animation-duration: 7s;
+    left: 28%;
+    background-color: darkgrey;
+    animation-duration: 7s;
 }
 .balloon:nth-child(5){
-	left: 40%;
-	background-color: limegreen;
-	animation-duration: 4.5s;	
+    left: 40%;
+    background-color: limegreen;
+    animation-duration: 4.5s;   
 }
 .balloon:nth-child(6) {
     left: 50%;
@@ -69,7 +69,7 @@ body{
 .balloon:nth-child(8) {
     left: 67%;
     background-color: mediumvioletred;
-       animation-duration: 2.9s;
+    animation-duration: 2.9s;
 }
 .balloon:nth-child(9) {
     left: 72%;
@@ -87,10 +87,18 @@ body{
 }
 
 @keyframes move-up {
-	0%{
-top: 69%;
+    0%{
+        top: 69%;
+    }
+    100%{
+        top: 0%;
+    }
 }
-100%{
-	top: 0%;
-}
+h1.birthday-text {
+    text-align: center;
+    width: 100vw;
+    padding-top: 355px;
+    text-shadow: 2px 3px 11px #0b69696b;
+    font-size: 90px;
+    color: #ee00be;
 }
