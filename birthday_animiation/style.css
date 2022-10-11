@@ -10,6 +10,7 @@ body{
     display: flex;
     background: #cc881b;
 }
+
 .balloon {
     position: absolute;
     width: 153px;
@@ -23,16 +24,16 @@ body{
     content: '';
     width: 1px;
     height: 169px;
-    background-color: wheat;
+    background-color: whitesmoke;
     top: 168px;
     left: 78px;
 }
 .balloon::after {
     position: absolute;
     content: '';
-    border-bottom: 12px solid red;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-top: 13px solid green;
     top: 166px;
     left: 68px;
 }
@@ -41,49 +42,91 @@ body{
     background-color: mistyrose;
     animation-duration: 2s; 
 }
+.balloon:nth-child(2)::after{
+    position: absolute;
+    content: '';
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-top: 13px solid #006a0057;
+    top: 166px;
+    left: 68px;
+}
 .balloon:nth-child(3){
     left: 20%;
     background-color: #006a0057;    
     animation-duration: 4s;
+
+}
+.balloon:nth-child(3)::after{
+    position: absolute;
+    content: '';
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-top: 13px solid red;
+    top: 166px;
+    left: 68px;
 }
 .balloon:nth-child(4){
     left: 28%;
     background-color: darkgrey;
     animation-duration: 7s;
 }
+.balloon:nth-child(4)::after {
+    border-top: 13px solid lightyellow;
+}
 .balloon:nth-child(5){
     left: 40%;
     background-color: limegreen;
     animation-duration: 4.5s;   
 }
+.balloon:nth-child(5)::after {
+    border-top: 13px solid lightsteelblue;
+}
 .balloon:nth-child(6) {
     left: 50%;
     background-color: #986b29;
+}
+.balloon:nth-child(6)::after {
+    border-top: 13px solid rebeccapurple;
 }
 .balloon:nth-child(7) {
     left: 57%;
     background-color: lightyellow;
     animation-duration: 3.5s;
 }
-
+.balloon:nth-child(7)::after {
+    border-top: 13px solid mediumseagreen;
+}
 .balloon:nth-child(8) {
     left: 67%;
     background-color: mediumvioletred;
     animation-duration: 2.9s;
 }
+.balloon:nth-child(8)::after {
+    border-top: 13px solid darkslategray;
+}
 .balloon:nth-child(9) {
     left: 72%;
     background-color: darkslategray;
+}
+.balloon:nth-child(9)::after {
+    border-top: 13px solid rosybrown;
 }
 .balloon:nth-child(10) {
     left: 82%;
     background-color: teal;
     animation-duration: 2s;
 }
+.balloon:nth-child(10)::after {
+    border-top: 13px solid lightyellow;
+}
 .balloon:nth-child(11) {
     left: 87%;
     background-color: floralwhite;
     animation-duration: 6s;
+}
+.balloon:nth-child(11)::after {
+    border-top: 13px solid violet;
 }
 
 @keyframes move-up {
@@ -94,6 +137,14 @@ body{
         top: 0%;
     }
 }
+@keyframes move-down {
+    0%{
+        bottom: 69%;
+    }
+    100%{
+        bottom: 0%;
+    }
+}
 h1.birthday-text {
     text-align: center;
     width: 100vw;
@@ -101,4 +152,8 @@ h1.birthday-text {
     text-shadow: 2px 3px 11px #0b69696b;
     font-size: 90px;
     color: #ee00be;
+    font-family: 'Pacifico', cursive;
+    font-style: italic;
+    font-weight: 100;
+    animation: move-down 10s;
 }
