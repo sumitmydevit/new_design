@@ -2,6 +2,7 @@ body{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: sans-serif;
 }
 header {
     width: 90%;
@@ -18,4 +19,20 @@ header {
 }
    .site-logo {
     display: flex;
+}
+.contct-heading {
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    width: 30%;
+    margin: auto;
+}
+.contct-heading:after {
+    content: '';
+    background-color: black;
+    width: 42px;
+    height: 4px;
+    position: absolute;
+    top: 117px;
+    left: 398px;
 }
