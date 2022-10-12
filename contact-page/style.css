@@ -1,0 +1,21 @@
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header {
+    width: 90%;
+    margin: auto;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 17px;
+}
+.menu-bar i.fa-solid {
+	 font-size: 23px;
+}
+   .site-logo {
+    display: flex;
+}
