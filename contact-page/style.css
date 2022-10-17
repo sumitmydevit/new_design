@@ -104,6 +104,23 @@ header {
     height: 297px;
 }
 .contact-info {
-    width: 74vw;
     padding-top: 26px;
+    display: flex;
+}
+.contact-form.form-text h2 {
+    color: #887777;
+    font-weight: 200;
+}
+.more-info {
+    background-color: green;
+}
+.coll-1 input {
+    height: 32px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-radius: 5px;
+    column-gap: 2px;
+    margin-right: 26px;
+    border-color: black;
 }
