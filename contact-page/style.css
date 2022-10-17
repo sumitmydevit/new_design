@@ -100,3 +100,10 @@ header {
   right: 35px;
   }
 }
+.map iframe {
+    height: 297px;
+}
+.contact-info {
+    width: 74vw;
+    padding-top: 26px;
+}
