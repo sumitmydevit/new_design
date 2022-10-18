@@ -1,6 +1,6 @@
-::selection{
-	background-color: yellow;
-	color: black;
+::selection {
+    background-color: #008dff26;
+    color: black;
 }
 body{
 	margin: 0;
@@ -28,7 +28,8 @@ header {
     font-size: 50px;
     font-weight: 900;
     text-transform: uppercase;
-    width: 30%;
+    width: 100%;
+    text-align: center;
     margin: auto;
 }
 .contct-heading:after {
@@ -100,27 +101,68 @@ header {
   right: 35px;
   }
 }
+.contact-form.form-text {
+    width: 65%;
+    margin: 20px;
+}
 .map iframe {
-    height: 297px;
+    width: 100%;
+    height: 40%;
 }
 .contact-info {
     padding-top: 26px;
     display: flex;
+    height: 646px;
 }
 .contact-form.form-text h2 {
     color: #887777;
     font-weight: 200;
 }
 .more-info {
-    background-color: green;
+    background-color: #FFCEB8;
+    width: 35%;
 }
 .coll-1 input {
-    height: 32px;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-radius: 5px;
-    column-gap: 2px;
-    margin-right: 26px;
+    height: 40px;
     border-color: black;
+    padding-right: 22px;
+    margin: 5px;
+    width: 28%;
+}
+.coll-1 input:focus {
+    box-shadow: inset 0px 0px 5px 1px #ffceb8;
+}
+form .coll-full textarea {
+    width: 97%;
+    align-items: center;
+    margin-left: 5px;
+    height: 170px;
+    border: 2px solid black;
+    margin-top: 20px;
+}
+form .coll-full textarea:focus {
+    box-shadow: inset 0px 0px 5px 1px #ffceb8;
+}
+.coll-full button {
+    background: #FFCEB8;
+    height: 40px;
+    margin-left: 6px;
+    width: 136px;
+    border: navajowhite;
+    border-radius: 8px;
+}
+.image-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 59px;
+}
+.ct-text {
+    width: 58%;
+}
+.ct-text h1 {
+    font-weight: 100;
+}
+.ct-text p {
+    line-height: 28px;
 }
