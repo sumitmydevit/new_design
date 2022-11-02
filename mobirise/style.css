@@ -1,0 +1,15 @@
+body{
+margin: 0;
+padding: 0;
+}
+ul.navbar li {
+    list-style: none;
+}
+/***** header  close **********/
+   section.bannner {
+    background-image: url(florist2.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-position: 50% 50%;
+    background-size: cover;
+}
