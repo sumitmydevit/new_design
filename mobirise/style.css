@@ -1,15 +1,54 @@
-body{
-margin: 0;
-padding: 0;
+body {
+    margin: 0;
+    font-family:  sans-serif ;
 }
-ul.navbar li {
+header {
+    position: absolute;
+    background-color: rgba(27, 116, 94, 0.2);
+    min-width: 100vw;
+    display: flex;
+}
+
+.nav {
+    margin: auto;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
     list-style: none;
+    position: relative;
 }
-/***** header  close **********/
-   section.bannner {
+
+.nav ul li {
+    display: inline-block;
+    color: #080201;
+    position: relative;
+}
+
+.nav a {
+    display: block;
+    padding: 0 10px;
+    color: #d8e3d5;
+    font-size: 16px;
+    line-height: 60px;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav a:hover {
+    color:rgb(250, 186, 132)
+    ;
+}
+li i.fa-brands {
+    color: #ffffff;
+    font-size: x-large;
+}
+.banner {
     background-image: url(florist2.jpg);
-    width: 100vw;
-    height: 100vh;
-    background-position: 50% 50%;
+    min-height: 100vh;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
