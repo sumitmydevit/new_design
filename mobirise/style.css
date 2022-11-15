@@ -8,42 +8,34 @@ header {
     min-width: 100vw;
     display: flex;
 }
-
-.nav {
+.nav.icon {
+    DISPLAY: INLINE-FLEX;
+    align-items: center;
     margin: auto;
+    padding: 21px 0px 0px 0px;
 }
-
-.nav ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    position: relative;
-}
-
-.nav ul li {
-    display: inline-block;
-    color: #080201;
-    position: relative;
-}
-
 .nav a {
-    display: block;
-    padding: 0 10px;
+    padding: 0px 0px 0px 0px;
     color: #d8e3d5;
     font-size: 16px;
-    line-height: 60px;
     text-decoration: none;
     font-weight: 500;
     font-family: 'Quicksand', sans-serif;
+    border-bottom: 1px solid transparent;
 }
 
 .nav a:hover {
-    color:rgb(250, 186, 132)
-    ;
+    color: rgb(250, 186, 132);
+    border-bottom: 1px solid;
+    transition: color .2s ease-in-out;
 }
-li i.fa-brands {
-    color: #ffffff;
-    font-size: x-large;
+li {
+    list-style: none;
+    padding: 16px 0px 10px 30px;
+}
+.icon .fa-brands {
+    font-size: 24px;
+    color: white;
 }
 .banner {
     background-image: url(florist2.jpg);
